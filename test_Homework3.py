@@ -8,7 +8,7 @@ import unittest
 from Homework_3 import create_dataframe
 # define class to run tests on this function
 class Homework3Test(unittest.TestCase):
-    
+
     dframe = create_dataframe("/Users/Gaz/Documents/Sqlite/class.db")
     n = dframe.shape[0]
     
@@ -41,5 +41,8 @@ class Homework3Test(unittest.TestCase):
         self.assertRaises(ValueError,create_dataframe,"invalid_path")
             
     
-    
+if __name__=='__main__':
+    unittest.main()
+
+
 
